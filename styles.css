@@ -1,0 +1,144 @@
+/*Font Stuff*/
+@font-face{
+    font-family: space_grotesk;
+    src:url("G:/[!]WORK[!]/Y2/DID/SCP Website/Wireframe/font/space_grotesk/space_grotesk.ttf")
+}
+Body {
+    background: lightgrey;
+    font-family: 'space_grotesk';
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+outline-style: solid;
+outline-width: thin;
+outline-color: black;
+background: rgb(33,33,33);
+background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(153,153,153,1) 100%);
+}
+.logo{
+width: 75px;
+height: 75px;
+align-content: center;
+padding: 5%;
+}
+.logocon{
+outline-style: solid;
+outline-width: thin;
+outline-color: black;
+}
+.titlecon{
+    flex-grow: 2;
+justify-content: center;
+}
+.title{
+    width: 160px;
+}
+
+/* Navbar */
+nav {
+    background-color: lightgray;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black; 
+        background-color: rgb(150,150,150);
+    
+    
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 10px 5px 5px;;
+    padding: 5px;
+
+}
+.item {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(33,33,33);
+    padding: 5px 20px;
+}
+
+/* Main */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+/*sidebars*/
+.left-bar,.right-bar {
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black;
+}
+/*left-bar*/
+.left-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(150,150,150);
+    justify-content: flex-start;
+}
+.management{
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black; 
+    margin: 0;
+    background-color: rgb(33,33,33);
+    color: white;
+}
+.topstaff{
+    list-style-type: none;
+    padding: 0;
+}
+.managementli{
+    text-decoration: none;
+    color: black;
+}
+.man1,.man2{
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black;
+    text-align: center;
+}
+.man1{
+    padding: 5px;
+    background-color: lightgray;
+}
+.man2{
+    background-color: rgb(33,33,33);
+    color: white;
+    padding: 5px;
+}
+.p1{
+    padding 1%;
+}
+/*center*/
+.center {
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: black;
+    text-align: center;
+}
+.p1{
+    margin: 1%;
+    padding: 1%;
+}
+.blueprint{
+    margin: 0;
+    padding: 0;
+}
+.blueprintpic{
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+/*right-bar*/
+.right-bar{
+}
+.rp1{
+    text-align: left;
+    padding: 1%;
+}

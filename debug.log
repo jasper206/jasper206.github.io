@@ -1,0 +1,3 @@
+[1104/231122.048:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1104/231708.048:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\jaspa\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\fa351f0f-28a7-43de-97f5-926433031b93: The system cannot find the path specified. (0x3)
+[1105/165447.009:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

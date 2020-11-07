@@ -1,1 +1,0 @@
-This is my first reposatory. Here I plan on using github for my uni work.

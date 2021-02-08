@@ -4,14 +4,15 @@
     src:url("G:/[!]WORK[!]/Y2/DID/SCP Website/Wireframe/font/space_grotesk/space_grotesk.ttf")
 }
 Body {
-    background: rgb(171,209,255);
+    background: rgb(237,242,251);
     font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
 }
 
 .header {
 display: grid;
 grid-template-columns: [logo] 10% [logo2] 90%;
-background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(144,170,255) 100%);
+background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(204,219,253,1)100%);
 border-radius: 25px;
 border: 2px solid black;
 }
@@ -32,7 +33,7 @@ width: 200px;
 
 /* ########################################## Navbar ################################################## */
 nav {
-    background-color: rgb(144,170,255);
+    background-color: rgb(215,227,252);
     border-radius: 25px;
     border: 2px solid black;
     margin: 5px 0px 5px 0px;
@@ -54,7 +55,7 @@ nav {
     transition: 0.2s;
 }
 .item:hover{
-    background-color: rgb(117,131,255);
+    background-color:  rgb(204,219,253);
     border: 1px solid black;
     color: rgb(0,0,0);
     border-radius: 10px;
@@ -63,14 +64,14 @@ nav {
 .item-here {
     color: black;
     text-decoration: none;
-    background-color: rgb(117,131,255);
+    background-color: rgb(182,204,254);
     padding: 5px 20px;
     border-radius: 25px;
     border: 1px solid black;
     transition: 0.2s;
 }
 .item-here:hover {
-    background-color: rgb(89,92,255);
+    background-color: rgb(171,196,255);
     transition: 0.2s;
 }
 
@@ -89,7 +90,6 @@ nav {
 }
 
 .mapdown-content a {
-  color: rgb(255,255,255);
   border-radius: 25px;
   padding: 12px 16px;
   text-decoration: none;
@@ -99,7 +99,7 @@ nav {
 }
 
 .mapdown-content a:hover {
-  background-color: rgb(117,131,255);
+  background-color: rgb(171,196,255);
   border-radius: 25px;
   border: 1px solid black;
   transition: 0.4s;
@@ -107,7 +107,7 @@ nav {
 
 .mapdown:hover .mapdown-content {
     display: block;
-    background-color: rgb(144,170,255);
+    background-color: rgb(193,211,254);
 }
 
 /* ########################################## Main ################################################## */
@@ -124,15 +124,15 @@ nav {
 /*left-bar*/
 .left-bar{
     grid-column-start: first;
-    background-color: rgb(117,131,255);
+    background-color: rgb(226,234,252);
     border: 2px solid black;
 }
 .management{
     margin: 0;
     border-radius: 25px;
     border: 2px solid black;
-    background-color: rgb(89,92,255);
-    color: white;
+    background-color: rgb(171,196,255);
+    color: rgb(20,20,20);
 }
 .topstaff{
     list-style-type: none;
@@ -144,23 +144,22 @@ nav {
 }
 .man1,.man2{
     border: 1px solid black;
-    background-color: rgb(144,170,255);
+    background-color: rgb(215,227,252);
 }
 .man1{
     border-radius: 0px 0px 25px 25px;
-    color: rgb(255,255,255);
 }
 .man2{
-    background-color: rgb(89,92,255);
-    color: rgb(255,255,255);
+    background-color: rgb(171,196,255);
+    color: rgb(20,20,20);
     border-radius: 25px 25px 0px 0px;
 }
 .left-text{
     padding: 2%;
     border-radius: 25px;
     border: 1px solid black;
-    background-color: rgb(144,170,255);
-    color: rgb(0,0,0);
+    background-color: rgb(182,204,254);
+    color: rgb(20,20,20);
 }
 .p1{
     padding: 2%;
@@ -179,8 +178,6 @@ nav {
 .p1index{
     padding: 2%;
 }
-.blueprint{
-}
 .blueprintpic{
     width: 100%;
     height: auto;
@@ -190,32 +187,32 @@ nav {
 .right-bar{
     border: 2px solid black;
     grid-column-start: last;
-    background-color: rgb(117,131,255);
+    background-color: rgb(226,234,252);
 }
 .news{
   list-style-type: none;
   padding: 0;
 }
 .Update{
-    background-color: rgb(89,92,255);
+    background-color: rgb(171,196,255);
     border-radius: 25px 25px 0px 0px;
     border: 1px solid black;
-    color: rgb(250,250,250);
+    color: rgb(20,20,20);
 }
 .date{
     border: 1px solid black;
-    background-color: rgb(117,131,255);
+    background-color: rgb(193,211,254);
 }
 .context{
     border-radius: 0px 0px 25px 25px;
     border: 1px solid black;
-    background-color: rgb(144,170,255);
+    background-color: rgb(215,227,252);
 }
 
 /* ########################################## Map links ################################################## */
 
 .maplist{
-    background-color: rgb(201,248,255);
+    background-color: rgb(171,196,255);
     border-radius: 10px;
     border: 1px solid black;
     color: black;
@@ -229,25 +226,28 @@ nav {
 /* ########################################## Forums ################################################## */
 
 .forum_list{
-    background-color: rgb(255,255,255);
+    background-color: rgb(215,227,252);
     border: 1px solid black;
     color: black;
 }
 .rules{
-    background-color: rgb(255,255,255);
+    background-color: rgb(171,196,255);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0% 4% 0% 4%;
     color: black;
 }
 
 /* ########################################## Login/signup ################################################## */
 
 .login{
-    background-color: rgb(201,248,255);
+    background-color: rgb(171,196,255);
     border-radius: 10px;
     border: 1px solid black;
     color: black;
 }
 .signup{
-    background-color: rgb(201,248,255);
+    background-color: rgb(171,196,255);
     border-radius: 10px;
     border: 1px solid black;
     color: black;
@@ -256,18 +256,18 @@ nav {
 /* ########################################## Footer ################################################## */
 
 .itemf{
-    color: rgb(0,0,0);
+    color: rgb(20,20,20);
     text-decoration: none;
-    background-color: rgb(144,170,255);
+    background-color: rgb(204,219,253);
     padding: 5px 20px;
     border-radius: 25px;
     transition: 0.2s;
     border: 2px solid black;
 }
 .itemf:hover{
-    background-color: rgb(117,131,255);
+    background-color: rgb(171,196,255);
     border: 2px solid black;
-    color: rgb(255,255,255);
+    color: rgb(20,20,20);
     border-radius: 10px;
     transition: 0.5s;
 } 

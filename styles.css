@@ -4,46 +4,38 @@
     src:url("G:/[!]WORK[!]/Y2/DID/SCP Website/Wireframe/font/space_grotesk/space_grotesk.ttf")
 }
 Body {
-    background: lightgrey;
+    background: rgb(171,209,255);
     font-family: 'space_grotesk';
 }
 
 .header {
 display: grid;
 grid-template-columns: [logo] 10% [logo2] 90%;
-outline-style: solid;
-outline-width: thin;
-outline-color: black;
-background: rgb(33,33,33);
-background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(153,153,153,1) 100%);
+background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(144,170,255) 100%);
+border-radius: 25px;
+border: 2px solid black;
 }
 .logo{
 grid-column-start: logo;
 width: 75px;
 height: 75px;
 justify-content: center;
-padding: 5%;
-}
-.logocon{
-outline-style: solid;
-outline-width: thin;
-outline-color: black;
+margin: 10px;
 }
 .titlecon{
-flex-grow: 2;
-justify-content: center;
+margin: 5px;
 }
 .title{
-    width: 160px;
+justify-content: center;
+width: 200px;
 }
 
 /* ########################################## Navbar ################################################## */
 nav {
-    background-color: lightgray;
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: black; 
-    background-color: rgb(150,150,150);   
+    background-color: rgb(144,170,255);
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 5px 0px 5px 0px;
 }
 .navbar {
     list-style-type: none;
@@ -55,29 +47,34 @@ nav {
     padding: 5px;
 }
 .item{
-    color: white;
+    color: rgb(0,0,0);
     text-decoration: none;
-    background-color: rgb(33,33,33);
     padding: 5px 20px;
-    border: 1px solid black;
+    border-radius: 25px;
+    transition: 0.2s;
 }
 .item:hover{
-    background-color: rgb(200,200,200);
+    background-color: rgb(117,131,255);
     border: 1px solid black;
     color: rgb(0,0,0);
+    border-radius: 10px;
+    transition: 0.5s;
 } 
 .item-here {
     color: black;
     text-decoration: none;
-    background-color: rgb(233,233,233);
+    background-color: rgb(117,131,255);
     padding: 5px 20px;
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: black; 
+    border-radius: 25px;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+.item-here:hover {
+    background-color: rgb(89,92,255);
+    transition: 0.2s;
 }
 
 /* ########################################## Dropdown Button ################################################## */
-/* Dropdown Content (Hidden by Default) */
 .mapdown {
   position: relative;
   display: inline-block;
@@ -86,27 +83,31 @@ nav {
 .mapdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(233,233,233);
+  border-radius: 25px;
+  border: 2px solid black;
+  margin: 5px 0px 0px 0px;
 }
-/* Links inside the dropdown */
+
 .mapdown-content a {
-  color: black;
+  color: rgb(255,255,255);
+  border-radius: 25px;
   padding: 12px 16px;
   text-decoration: none;
-  border: 1px solid black;
   display: block;
+  transition: 0.4s;
+  color: rgb(0,0,0);
 }
-/* Change color of dropdown links on hover */
-.mapdown-content a:hover {background-color: rgb(200,200,200);}
 
-/* Show the dropdown menu on hover */
-.mapdown:hover .mapdown-content
-{display: block;}
+.mapdown-content a:hover {
+  background-color: rgb(117,131,255);
+  border-radius: 25px;
+  border: 1px solid black;
+  transition: 0.4s;
+}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .mapdown:hover .mapdown-content {
-    background-color: rgb(175,175,175);
-    color: rgb(0,0,0);
+    display: block;
+    background-color: rgb(144,170,255);
 }
 
 /* ########################################## Main ################################################## */
@@ -118,17 +119,19 @@ nav {
 }
 /*sidebars*/
 .left-bar,.right-bar,.center {
+    border-radius: 25px;
 }
 /*left-bar*/
 .left-bar{
-    border: 1px solid black;
     grid-column-start: first;
-    background-color: rgb(150,150,150);
+    background-color: rgb(117,131,255);
+    border: 2px solid black;
 }
 .management{
     margin: 0;
-    border: 1px solid black;
-    background-color: rgb(33,33,33);
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: rgb(89,92,255);
     color: white;
 }
 .topstaff{
@@ -141,14 +144,23 @@ nav {
 }
 .man1,.man2{
     border: 1px solid black;
-    background-color: lightgray;
+    background-color: rgb(144,170,255);
+}
+.man1{
+    border-radius: 0px 0px 25px 25px;
+    color: rgb(255,255,255);
 }
 .man2{
-    background-color: rgb(33,33,33);
-    color: white;
+    background-color: rgb(89,92,255);
+    color: rgb(255,255,255);
+    border-radius: 25px 25px 0px 0px;
 }
 .left-text{
     padding: 2%;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: rgb(144,170,255);
+    color: rgb(0,0,0);
 }
 .p1{
     padding: 2%;
@@ -158,13 +170,11 @@ nav {
     padding: 3%;
     border: 1px solid black;
     margin: 3%;
-    background-color: rgb(150,150,150);
 }
 /*center*/
 .center {
-    border: 1px solid black;
+    border: 2px solid black;
     grid-column-start: centre;
-    flex-grow: 4;
 }
 .p1index{
     padding: 2%;
@@ -175,25 +185,43 @@ nav {
     width: 100%;
     height: auto;
 }
+
 /*right-bar*/
 .right-bar{
-    border: 1px solid black;
+    border: 2px solid black;
     grid-column-start: last;
+    background-color: rgb(117,131,255);
 }
-.rp1{
-    padding: 2%;
+.news{
+  list-style-type: none;
+  padding: 0;
+}
+.Update{
+    background-color: rgb(89,92,255);
+    border-radius: 25px 25px 0px 0px;
+    border: 1px solid black;
+    color: rgb(250,250,250);
+}
+.date{
+    border: 1px solid black;
+    background-color: rgb(117,131,255);
+}
+.context{
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid black;
+    background-color: rgb(144,170,255);
 }
 
 /* ########################################## Map links ################################################## */
 
 .maplist{
-    background-color: rgb(255,255,255);
+    background-color: rgb(201,248,255);
+    border-radius: 10px;
     border: 1px solid black;
     color: black;
 }
 
 .maplist2{
-    background-color: rgb(255,255,255);
     color: black;
     text-decoration: underline
 }
@@ -209,3 +237,38 @@ nav {
     background-color: rgb(255,255,255);
     color: black;
 }
+
+/* ########################################## Login/signup ################################################## */
+
+.login{
+    background-color: rgb(201,248,255);
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+}
+.signup{
+    background-color: rgb(201,248,255);
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+}
+
+/* ########################################## Footer ################################################## */
+
+.itemf{
+    color: rgb(0,0,0);
+    text-decoration: none;
+    background-color: rgb(144,170,255);
+    padding: 5px 20px;
+    border-radius: 25px;
+    transition: 0.2s;
+    border: 2px solid black;
+}
+.itemf:hover{
+    background-color: rgb(117,131,255);
+    border: 2px solid black;
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    transition: 0.5s;
+} 
+

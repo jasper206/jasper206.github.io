@@ -9,8 +9,8 @@ Body {
 }
 
 .header {
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: [logo] 10% [logo2] 90%;
 outline-style: solid;
 outline-width: thin;
 outline-color: black;
@@ -18,9 +18,10 @@ background: rgb(33,33,33);
 background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(153,153,153,1) 100%);
 }
 .logo{
+grid-column-start: logo;
 width: 75px;
 height: 75px;
-align-content: center;
+justify-content: center;
 padding: 5%;
 }
 .logocon{
@@ -29,14 +30,14 @@ outline-width: thin;
 outline-color: black;
 }
 .titlecon{
-    flex-grow: 2;
+flex-grow: 2;
 justify-content: center;
 }
 .title{
     width: 160px;
 }
 
-/* Navbar */
+/* ########################################## Navbar ################################################## */
 nav {
     background-color: lightgray;
     outline-style: solid;
@@ -50,16 +51,21 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5px 10px 5px 5px;;
+    margin: 5px 10px 5px 5px;
     padding: 5px;
-
 }
-.item {
+.item{
     color: white;
     text-decoration: none;
     background-color: rgb(33,33,33);
     padding: 5px 20px;
+    border: 1px solid black;
 }
+.item:hover{
+    background-color: rgb(200,200,200);
+    border: 1px solid black;
+    color: rgb(0,0,0);
+} 
 .item-here {
     color: black;
     text-decoration: none;
@@ -70,29 +76,58 @@ nav {
     outline-color: black; 
 }
 
+/* ########################################## Dropdown Button ################################################## */
+/* Dropdown Content (Hidden by Default) */
+.mapdown {
+  position: relative;
+  display: inline-block;
+}
+
+.mapdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(233,233,233);
+}
+/* Links inside the dropdown */
+.mapdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.mapdown-content a:hover {background-color: rgb(200,200,200);}
+
+/* Show the dropdown menu on hover */
+.mapdown:hover .mapdown-content
+{display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.mapdown:hover .mapdown-content {
+    background-color: rgb(175,175,175);
+    color: rgb(0,0,0);
+}
+
+/* ########################################## Main ################################################## */
 /* Main */
 .main-content {
-    display: flex;
-    justify-content: space-between;
+    display: inline-grid;
+    grid-template-columns: [first] 25% [centre] 50% [last] 25%;
+    text-align: center;
 }
 /*sidebars*/
-.left-bar,.right-bar {
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: black;
+.left-bar,.right-bar,.center {
 }
 /*left-bar*/
 .left-bar{
-    display: flex;
-    flex-direction: column;
+    border: 1px solid black;
+    grid-column-start: first;
     background-color: rgb(150,150,150);
-    justify-content: flex-start;
 }
 .management{
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: black; 
     margin: 0;
+    border: 1px solid black;
     background-color: rgb(33,33,33);
     color: white;
 }
@@ -105,47 +140,72 @@ nav {
     color: black;
 }
 .man1,.man2{
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: black;
-    text-align: center;
-}
-.man1{
-    padding: 5px;
+    border: 1px solid black;
     background-color: lightgray;
 }
 .man2{
     background-color: rgb(33,33,33);
     color: white;
-    padding: 5px;
+}
+.left-text{
+    padding: 2%;
 }
 .p1{
-    padding 1%;
+    padding: 2%;
+}
+.p1copyr{
+    text-align: justify;
+    padding: 3%;
+    border: 1px solid black;
+    margin: 3%;
+    background-color: rgb(150,150,150);
 }
 /*center*/
 .center {
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: black;
-    text-align: center;
+    border: 1px solid black;
+    grid-column-start: centre;
+    flex-grow: 4;
 }
-.p1{
-    margin: 1%;
-    padding: 1%;
+.p1index{
+    padding: 2%;
 }
 .blueprint{
-    margin: 0;
-    padding: 0;
 }
 .blueprintpic{
-    width: 600px;
-    margin: auto;
-    padding: 20px;
+    width: 100%;
+    height: auto;
 }
 /*right-bar*/
 .right-bar{
+    border: 1px solid black;
+    grid-column-start: last;
 }
 .rp1{
-    text-align: left;
-    padding: 1%;
+    padding: 2%;
+}
+
+/* ########################################## Map links ################################################## */
+
+.maplist{
+    background-color: rgb(255,255,255);
+    border: 1px solid black;
+    color: black;
+}
+
+.maplist2{
+    background-color: rgb(255,255,255);
+    color: black;
+    text-decoration: underline
+}
+
+/* ########################################## Forums ################################################## */
+
+.forum_list{
+    background-color: rgb(255,255,255);
+    border: 1px solid black;
+    color: black;
+}
+.rules{
+    background-color: rgb(255,255,255);
+    color: black;
 }
